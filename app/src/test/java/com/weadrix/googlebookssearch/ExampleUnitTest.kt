@@ -15,7 +15,7 @@ class ExampleUnitTest {
     fun googleBooksApiTest() {
         val searchResult = BookHttp.searchBook("Dominando o Android")
         searchResult?.items?.forEach {volume ->
-            println(volume)
+            println(volume.volumeInfo.title)
         }
         println("fernanda é maravilhosa")
     }
