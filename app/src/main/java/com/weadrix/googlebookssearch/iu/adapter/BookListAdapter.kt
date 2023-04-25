@@ -27,7 +27,7 @@ class BookListAdapter(
 
     override fun onBindViewHolder(holder: BookHolder, position: Int) {
         val volume = items(position)
-        holder.txtTitle.text = volume.
+        holder.txtTitle.text =
 
     }
 
