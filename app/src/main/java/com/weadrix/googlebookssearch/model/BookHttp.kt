@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit
 
 object BookHttp {
     private const val API_KEY = "AIzaSyCMbkkCMh_pBJQiWOcLeEda_Dxl2BRwtGo"
-    private const val BOOK_JSON_URL = "HTTPS://www.googleapis.com/books/v1/volumes?q=%s&key=$API_KEY"
+    private const val BOOK_JSON_URL = "https://www.googleapis.com/books/v1/volumes?q=%s&key=$API_KEY"
 
     private val client = OkHttpClient.Builder()
         .readTimeout(10, TimeUnit.SECONDS)
